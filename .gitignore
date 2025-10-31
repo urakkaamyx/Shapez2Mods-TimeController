@@ -361,3 +361,34 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore all solution and project files
+*.sln
+*.csproj
+*.vbproj
+*.fsproj
+*.user
+*.suo
+
+# Ignore build artifacts
+bin/
+obj/
+out/
+
+# Ignore IDE settings
+.vs/
+.idea/
+.vscode/
+
+# Ignore packages
+packages/
+*.nupkg
+
+# Keep everything inside /src
+!/src/
+!/src/**
+
+# Optional: ignore logs, temp files
+*.log
+*.tmp
+*.bak
