@@ -1,6 +1,6 @@
 ﻿{
   "name": "TimeController",
-  "version_number": "1.0.1",
+  "version_number": "1.0.1a",
   "website_url": "https://github.com/urakkaamyx/Shapez2Mods-TimeController",
   "description": "Adds time control buttons (pause, 1x, 5x, 10x, 25x) to the Shapez 2 HUD.",
   "dependencies": [

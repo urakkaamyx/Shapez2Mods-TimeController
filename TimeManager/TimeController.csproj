@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="Core">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Game.Content.Editor.ArtWorkflow.GameObjectRepresentation">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Content.Editor.ArtWorkflow.GameObjectRepresentation.dll</HintPath>
