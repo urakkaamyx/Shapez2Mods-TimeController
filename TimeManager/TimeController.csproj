@@ -1,0 +1,141 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <OutputPath>G:\Program Files (x86)\Steam\steamapps\common\shapez 2\$(BEPINEX_PLUGINS)\TimeManager</OutputPath>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseOutputPath>G:\Program Files (x86)\Steam\steamapps\common\shapez 2\BepInEx\plugins\TimeManager</BaseOutputPath>
+    <NuGetAuditLevel>critical</NuGetAuditLevel>
+    <RootNamespace>Shapez2Mods.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <IsPublishable>False</IsPublishable>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <IsPublishable>False</IsPublishable>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Content.Editor.ArtWorkflow.GameObjectRepresentation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Content.Editor.ArtWorkflow.GameObjectRepresentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Content.Editor.MeshBake">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Content.Editor.MeshBake.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Content.Features">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Content.Features.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Coordinates">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Coordinates.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Editor.MeshBaker">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Editor.MeshBaker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Map">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Map.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Map.Layout">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Map.Layout.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Map.Layout.Model">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Map.Layout.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Map.Model">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Map.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Map.Simulation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Map.Simulation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Rendering">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Rendering.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Rendering.ShaderProfiling">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Rendering.ShaderProfiling.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Core.Simulation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Core.Simulation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Hud.View">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Hud.View.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Hud.View.Model">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Hud.View.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Interaction">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Interaction.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Game.Orchestration">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Game.Orchestration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SPZGameAssembly">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\SPZGameAssembly.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SPZPluginsAssembly">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\SPZPluginsAssembly.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toolbar">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Toolbar.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\Unity.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\shapez 2\shapez 2_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
